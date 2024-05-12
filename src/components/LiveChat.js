@@ -25,7 +25,7 @@ const LiveChat = () => {
   return (
     <div className='p-2 border border-black bg-slate-100 rounded-lg'>
       <div
-        className='w-full h-[600px] ml-2 p-2 rounded-lg overflow-y-scroll flex flex-col-reverse'>
+        className='w-full h-[600px] rounded-lg overflow-y-scroll flex flex-col-reverse'>
         {liveComment.map((comment, id) => (
           <LiveChatMsg key={id} name={comment.name} message={comment.msg} />
         ))}
@@ -48,7 +48,7 @@ const LiveChat = () => {
           onChange={(e) => setLiveMsg(e.target.value)}
         />
         <button
-          className='bg-black text-white ml-4 px-2 rounded-lg py-1'>
+          className='bg-black text-white ml-4 mt-2 px-2 rounded-lg py-1'>
           Send
         </button>
       </form>
